@@ -28,4 +28,3 @@ if (sizeof($taskArray) > 0) {
     }
 }
 die($html);
-?>

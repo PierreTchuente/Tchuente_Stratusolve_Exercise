@@ -71,10 +71,14 @@
 <script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+
     var currentTaskId = -1;
+
     $('#myModal').on('show.bs.modal', function (event) {
+
         var triggerElement = $(event.relatedTarget); // Element that triggered the modal
         var modal = $(this);
+
         if (triggerElement.attr("id") == 'newTask') {
             modal.find('.modal-title').text('New Task');
             $('#deleteTask').hide();
@@ -83,21 +87,90 @@
             modal.find('.modal-title').text('Task details');
             $('#deleteTask').show();
             currentTaskId = triggerElement.attr("id");
+
+            debugger;
+
+            // make the call here to get the details
+          /* $.post('update_task.php', {action: 'TaskDetails' ,taskID: parseInt(currentTaskId)}, function(data){
+
+               debugger;
+
+               console.log(data);
+           });*/
+
+            $.ajax({
+                type: "POST",
+                url: 'update_task.php',
+                data: {action: "TaskDetails", taskID: parseInt(currentTaskId)},
+                success: function(data){
+
+                    debugger;
+
+                    $('#InputTaskName').val('');
+                    $('#InputTaskDescription').val('');
+                    console.log(data);
+                    updateTaskList();  //update when there is success.
+                }
+            });
+
+
             console.log('Task ID: '+triggerElement.attr("id"));
         }
     });
+
     $('#saveTask').click(function() {
+
         //Assignment: Implement this functionality
-        alert('Save... Id:'+currentTaskId);
+
+       debugger;
+
+        currentTaskId = parseInt(currentTaskId); // convert to int
+
+       if(currentTaskId === -1){  // we are creating a new task
+
+           $.ajax({
+               type: "POST",
+               url: 'update_task.php',
+               data: {action: "CreateTaskUpdate", taskID: null ,taskname: $('#InputTaskName').val() , taskDescription: $('#InputTaskDescription').val()},
+               success: function(data){
+                   $('#InputTaskName').val('');
+                   $('#InputTaskDescription').val('');
+                   console.log(data);
+                   updateTaskList();  //update when there is success.
+               }
+           });
+       }else if(currentTaskId > 0){  // we are updating
+
+           $.ajax({
+               type: "POST",
+               url: 'update_task.php',
+               data: {action: "CreateTaskUpdate", taskID: currentTaskId , taskname: $('#InputTaskName').val() , taskDescription: $('#InputTaskDescription').val()},
+               success: function(data){
+                   $('#InputTaskName').val('');
+                   $('#InputTaskDescription').val('');
+                   currentTaskId = -1; //reset to -1 when the update is done
+                   console.log(data);
+                   updateTaskList();  //update when there is success.
+               }
+           });
+       }
+
+        //alert('Save... Id:'+currentTaskId);
         $('#myModal').modal('hide');
-        updateTaskList();
+        //updateTaskList();
     });
+
     $('#deleteTask').click(function() {
+
+        debugger;
+
         //Assignment: Implement this functionality
-        alert('Delete... Id:'+currentTaskId);
+        //alert('Delete... Id:'+currentTaskId);
+
         $('#myModal').modal('hide');
         updateTaskList();
     });
+
     function updateTaskList() {
         $.post("list_tasks.php", function( data ) {
             $( "#TaskList" ).html( data );
