@@ -19,9 +19,14 @@ if($_POST['action'] == "CreateTaskUpdate"){
 }
 
 if($_POST['action'] == "TaskDetails"){
-    logData($_POST['taskID']);
    $task =  Task::getTaskDetails($_POST['taskID']);
    die($task);
+}
+
+
+if($_POST['action'] == "deleteTask"){
+    Task::Delete($_POST['taskID']);
+    die("successfully deleted");
 }
 
 ?>

@@ -1,12 +1,146 @@
-1
+Array
+login out the new task
+entering the save function
 BEFORE ENCODING
-[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task Description"},{"TaskId":2,"TaskName":"another new task","TaskDescription":"another new task description"}]
+[{"TaskId":"1","TaskName":"hello task update","TaskDescription":"hello task update"},{"TaskId":"2","TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":3,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":4,"TaskName":"task 5","TaskDescription":"task 5 description"},{"TaskId":5,"TaskName":"third task","TaskDescription":"third task description update"}]
+4
+BEFORE LOOPING
+[{"TaskId":"1","TaskName":"hello task update","TaskDescription":"hello task update"},{"TaskId":"2","TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":3,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":4,"TaskName":"task 5","TaskDescription":"task 5 description"},{"TaskId":5,"TaskName":"third task","TaskDescription":"third task description update"}]
+AFTER SLICING
+[{"TaskId":"1","TaskName":"hello task update","TaskDescription":"hello task update"},{"TaskId":"2","TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":3,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":4,"TaskName":"third task","TaskDescription":"third task description update"}]
+BEFORE ENCODING
+[{"TaskId":"1","TaskName":"hello task update","TaskDescription":"hello task update"},{"TaskId":"2","TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":3,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":4,"TaskName":"third task","TaskDescription":"third task description update"}]
+Array
+login out the new task
+entering the save function
+BEFORE ENCODING
+[{"TaskId":"1","TaskName":"hello task update","TaskDescription":"hello task update"},{"TaskId":"2","TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":3,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":4,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":5,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
 Array
 login out the updating task
 entering the save function
-2
 BEFORE ENCODING
-[{"TaskId":0,"TaskName":"new test task updated","TaskDescription":"new test task Description updated"},{"TaskId":2,"TaskName":"another new task","TaskDescription":"another new task description"}]
+[{"TaskId":"1","TaskName":"hello task update","TaskDescription":"hello task update"},{"TaskId":"2","TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":3,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":4,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":5,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+1
+BEFORE LOOPING
+[{"TaskId":"1","TaskName":"hello task update","TaskDescription":"hello task update"},{"TaskId":"2","TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":3,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":4,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":5,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":2,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":3,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":4,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":2,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":3,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":4,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+1
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"another new task update","TaskDescription":"another new task update"},{"TaskId":2,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":3,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":4,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":2,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":3,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":2,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":3,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+2
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":2,"TaskName":"third task","TaskDescription":"third task description update"},{"TaskId":3,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":2,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":2,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+2
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"},{"TaskId":2,"TaskName":"do my shores","TaskDescription":"clean the house and all rooms "}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"}]
+1
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"task 4","TaskDescription":"task4 description"}]
+AFTER SLICING
+[]
 Array
-login out the updating task
+login out the new task
+entering the save function
+Array
+login out the new task
+Array
+login out the new task
+entering the save function
+Array
+login out the new task
+entering the save function
+Array
+login out the new task
+entering the save function
+Array
+login out the new task
+entering the save function
+Array
+login out the new task
+entering the save function
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"hello task","TaskDescription":"hello task"},{"TaskId":2,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":3,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":4,"TaskName":"another new task","TaskDescription":"another new task"},{"TaskId":5,"TaskName":"task 3","TaskDescription":"task 3"}]
+1
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"hello task","TaskDescription":"hello task"},{"TaskId":2,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":3,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":4,"TaskName":"another new task","TaskDescription":"another new task"},{"TaskId":5,"TaskName":"task 3","TaskDescription":"task 3"}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":3,"TaskName":"another new task","TaskDescription":"another new task"},{"TaskId":4,"TaskName":"task 3","TaskDescription":"task 3"}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":3,"TaskName":"another new task","TaskDescription":"another new task"},{"TaskId":4,"TaskName":"task 3","TaskDescription":"task 3"}]
+4
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":3,"TaskName":"another new task","TaskDescription":"another new task"},{"TaskId":4,"TaskName":"task 3","TaskDescription":"task 3"}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":3,"TaskName":"another new task","TaskDescription":"another new task"}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":3,"TaskName":"another new task","TaskDescription":"another new task"}]
+2
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"has to be change","TaskDescription":"has to be change"},{"TaskId":3,"TaskName":"another new task","TaskDescription":"another new task"}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"another new task","TaskDescription":"another new task"}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"another new task","TaskDescription":"another new task"}]
+1
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"another new task","TaskDescription":"another new task"}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"another new task","TaskDescription":"another new task"}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"another new task","TaskDescription":"another new task"}]
+1
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"another new task","TaskDescription":"another new task"}]
+AFTER SLICING
+[]
+Array
+login out the new task
+entering the save function
+Array
+login out the new task
+entering the save function
+Array
+login out the new task
+entering the save function
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"another new task","TaskDescription":"another new task"},{"TaskId":3,"TaskName":"task 3","TaskDescription":"task 3"}]
+2
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"another new task","TaskDescription":"another new task"},{"TaskId":3,"TaskName":"task 3","TaskDescription":"task 3"}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"task 3","TaskDescription":"task 3"}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"task 3","TaskDescription":"task 3"}]
+2
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"},{"TaskId":2,"TaskName":"task 3","TaskDescription":"task 3"}]
+AFTER SLICING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"}]
+BEFORE ENCODING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"}]
+1
+BEFORE LOOPING
+[{"TaskId":1,"TaskName":"new test task","TaskDescription":"new test task"}]
+AFTER SLICING
+[]
+Array
+login out the new task
+entering the save function
+Array
+login out the new task
 entering the save function

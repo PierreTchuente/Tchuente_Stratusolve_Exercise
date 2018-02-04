@@ -43,11 +43,11 @@ class Task {
             }elseif ($taskId > 0){  // we are updating
                 //
                 $newTask  = new stdClass();
-                $newTask->TaskId =  $taskId = $taskId - 1; // we updating the array at position $taskId - 1
+                $newTask->TaskId =  $taskId;
                 $newTask->TaskName = $taskName;
                 $newTask->TaskDescription = $taskDescription;
                 logData("login out the updating task");
-                $this->TaskDataSource[$taskId] = $newTask; //still an array at this point
+                $this->TaskDataSource[$taskId - 1] = $newTask; ////we updating the array at position $taskId - 1
             }
 
         }
@@ -112,8 +112,35 @@ class Task {
         $this->TaskDataSource  = json_encode($this->TaskDataSource);
         file_put_contents('Task_Data.txt', $this->TaskDataSource); // writing to the file.
     }
-    public function Delete() {
+
+    /**
+     * @param $Id
+     */
+    public static function Delete($Id) {  // deleting a task required the task id to be deleted.
         //Assignment: Code to delete task here
+
+        logData($Id);
+
+        // Assignment: Code to load details here...
+        $fileContent = file_get_contents('Task_Data.txt');
+        $arrayTask =  json_decode($fileContent, true);
+        $length = sizeof($arrayTask);
+
+        logData('BEFORE LOOPING');
+        logData(json_encode($arrayTask));
+
+        for ($i = $Id;  $i < $length ; $i++){
+            $arrayTask[$i]["TaskId"]  = $arrayTask[$i]["TaskId"] - 1; // shifting all ids from $Id downward.
+        }
+        array_splice($arrayTask, $Id-1, 1);
+        logData('AFTER SLICING');
+        logData(json_encode($arrayTask));
+        if(sizeof($arrayTask) == 0){
+            file_put_contents('Task_Data.txt', "");
+        }else {
+            file_put_contents('Task_Data.txt', json_encode($arrayTask));
+        }
+
     }
 }
 ?>

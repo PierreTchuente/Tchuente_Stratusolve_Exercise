@@ -107,7 +107,6 @@
                 }
             });
 
-
             console.log('Task ID: '+triggerElement.attr("id"));
         }
     });
@@ -156,13 +155,26 @@
 
     $('#deleteTask').click(function() {
 
-        debugger;
-
         //Assignment: Implement this functionality
         //alert('Delete... Id:'+currentTaskId);
 
+        $.ajax({
+            type: "POST",
+            url: 'update_task.php',
+            data: {action: "deleteTask", taskID: parseInt(currentTaskId)},
+            success: function(data){
+
+                console.log(data);
+                updateTaskList();  //update when there is success.
+                $('#InputTaskName').val('');
+                $('#InputTaskDescription').val('');
+            },
+            error: function (error){
+                alert("failed to delete task with id " + currentTaskId);
+            }
+        });
         $('#myModal').modal('hide');
-        updateTaskList();
+        //updateTaskList();
     });
 
     function updateTaskList() {
