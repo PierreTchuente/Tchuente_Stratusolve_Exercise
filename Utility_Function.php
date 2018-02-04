@@ -9,5 +9,5 @@
 
 
 function logData($data){
-    file_put_contents('./log_'.date("j.n.Y").'.txt', $data .'\n', FILE_APPEND);
+    file_put_contents('./log_'.date("j.n.Y").'.txt', $data ."\n", FILE_APPEND);
 }

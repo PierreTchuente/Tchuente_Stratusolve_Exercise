@@ -100,10 +100,8 @@ class Task {
             $fileContent = file_get_contents('Task_Data.txt');
             logData('BEFORE ENCODING');
             logData($fileContent);
-            $arrayTask =  json_decode($fileContent);
-            logData($arrayTask[$Id - 1]);
-            return $arrayTask[$Id - 1];
-
+            $arrayTask =  json_decode($fileContent, true);
+            return json_encode($arrayTask[$Id - 1]);
         } else
             return null;
     }
@@ -112,7 +110,7 @@ class Task {
         //Assignment: Code to save task here
         logData('entering the save function');
         $this->TaskDataSource  = json_encode($this->TaskDataSource);
-        file_put_contents('Task_Data.txt', print_r($this->TaskDataSource,true)); // writing to the file.
+        file_put_contents('Task_Data.txt', $this->TaskDataSource); // writing to the file.
     }
     public function Delete() {
         //Assignment: Code to delete task here

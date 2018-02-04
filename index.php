@@ -90,14 +90,6 @@
 
             debugger;
 
-            // make the call here to get the details
-          /* $.post('update_task.php', {action: 'TaskDetails' ,taskID: parseInt(currentTaskId)}, function(data){
-
-               debugger;
-
-               console.log(data);
-           });*/
-
             $.ajax({
                 type: "POST",
                 url: 'update_task.php',
@@ -106,8 +98,10 @@
 
                     debugger;
 
-                    $('#InputTaskName').val('');
-                    $('#InputTaskDescription').val('');
+                    var task  = JSON.parse(data);
+
+                    $('#InputTaskName').val(task.TaskName);
+                    $('#InputTaskDescription').val(task.TaskDescription);
                     console.log(data);
                     updateTaskList();  //update when there is success.
                 }
